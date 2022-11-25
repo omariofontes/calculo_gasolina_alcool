@@ -1,0 +1,144 @@
+*{
+  margin: 0 auto;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #005f73;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* alinhamento horizontal */
+  align-items: center; /* alinhamento vertical */
+  flex-direction: column; /*um elemento abaixo do outro, em coluna */  
+}
+
+.container {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px
+}
+
+.logo {
+  max-width: 227px;
+  margin-top: 38px;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.form label{
+  font-size: 20px;
+  color: #fff;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 14px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.button {
+  background-color: #001219;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.section {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+  padding: 10px 28px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.hide{
+  display: none;
+}
+
+.section:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+#result{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.result {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.info {
+  position: fixed; /*posição da info fixa*/
+  right: 14px;
+  bottom: 22px;
+}
+
+.info-img {
+  width: 66px;
+  height: 66px;
+}
+
+.tooltip {
+  color: #001219;
+  font-weight: bold;
+  padding: 10px 8px;
+  position: relative; /*posição da descrição relativa, deixando ela no meio da img, com o bottom em 28px*/
+  bottom: 28px;
+  display: none; /*display none para que a descrição não apareça. Somente quando passar o mouse, feito no cod abaixo*/
+}
+
+.info:hover .tooltip{
+  display: inline;
+}
+
+.sobre {
+  background-color: #001219;
+  max-width: 620px;
+  padding: 24px 14px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.sobre p {
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 150%;
+}
+
+.button-calcular {
+  height: 40px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
